@@ -1,5 +1,5 @@
 const Ship = (length) => {
-
+  
   let hits = 0;
   let sunk = false;
   
@@ -13,9 +13,11 @@ const Ship = (length) => {
   }
 
   const status = () => {
-    return `Hits: ${hits}, Sunk: ${sunk}`
+    return `Hits: ${hits}, Sunk: ${sunk}, Length: ${length}`
   }
   
   return { hit, status }
 
 }
+
+export default Ship
